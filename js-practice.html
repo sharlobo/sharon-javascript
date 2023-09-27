@@ -60,7 +60,7 @@ console.log(try02);
 let try03= makeSquare(10);
 console.log(try03);
 
-console.log("Functions on my own")
+console.log("Functions on my own:")
 // functions on my own 
 function makeName(firstName, middleName, lastName){
   let fullName = firstName + " " + middleName + " " + lastName; 
@@ -70,6 +70,39 @@ function makeName(firstName, middleName, lastName){
 console.log(makeName("William", "Bradley", "Pitt" ));
 console.log(makeName("Leonardo", "Wilhelm", "DiCaprio"));
 console.log(makeName("Robert", '"Beto"', "O'Rourke"));
+
+
+// Just a log to show in our Console
+console.log("Making a better name function:");
+
+// A better name function to fix middle initials
+//// Make a name with middle initial
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    // adding and updating here 
+    middleName = middleName + ".";
+  }
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("John", "F", "Kennedy"));
+console.log(makeBetterName("George", "W", "Bush" ));
+
+console.log("scoreCompare function");
+  function scoreCompare(home, away) {
+    if (home > away) {
+    return "Home team wins!";
+  } else if (home === away) {
+    return "It was a tie";
+  } else {
+      return "Away team wins :(";
+  }
+}
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+  console.log(scoreCompare(5,5));
 
   </script>
 </body>
